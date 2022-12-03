@@ -41,9 +41,10 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
   
 ### Note: 
    if this error in running contaners try the below commnad in CMD
-        Error starting userland proxy: listen tcp 0.0.0.0:80: bind: An attempt was made to access a socket in a way forbidden by its access permissions
+   
+   Error starting userland proxy: listen tcp 0.0.0.0:80: bind: An attempt was made to access a socket in a way forbidden by its access permissions
 	
-                netsh http add iplisten ipaddress=::
+    netsh http add iplisten ipaddress=::
                 
    The development directory is ignored by git. It is mounted and available inside the container. Create all your benches (installations of bench, the tool that          manages frappe) inside this directory.
    Node v14 and v10 are installed. Check with nvm ls. Node v14 is used by default.
